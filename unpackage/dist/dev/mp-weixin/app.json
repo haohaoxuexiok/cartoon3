@@ -1,0 +1,18 @@
+{
+    "pages": [
+        "pages/login/login",
+        "pages/register/register",
+        "pages/home/home",
+        "pages/detail/detail",
+        "pages/play/play"
+    ],
+    "subPackages": [],
+    "window": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "uniapp",
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#F8F8F8"
+    },
+    "usingComponents": {},
+    "sitemapLocation": "sitemap.json"
+}

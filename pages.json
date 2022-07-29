@@ -1,0 +1,232 @@
+{
+	"easycom": {
+			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+		    "path" : "pages/home/home",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false,
+				"navigationStyle":"custom"//去掉顶部的导航栏
+		    }
+		    
+		}
+		,
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor":"#fff",
+				"navigationStyle":"custom"//去掉顶部的导航栏
+			}
+		},
+		{
+		    "path" : "pages/register/register",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#fff"
+			
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/detail/detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/play/play",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/search/search",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/order/order",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/category/category",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor":"#fff",
+				"navigationStyle":"custom"//去掉顶部的导航栏
+			}
+		}
+        ,{
+            "path" : "pages/history/history",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+				
+                "enablePullDownRefresh": false,
+				"app-plus": {
+								"titleNView": {
+									"titleSize": "28rpx",
+									"buttons": [
+										{    
+										    "float": "right",
+											"fontSize": "30rpx",
+											"text": "清空"
+										
+										}
+										
+									]
+								}
+						}
+				
+            }
+            
+        }
+        ,{
+            "path" : "pages/suggest/suggest",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"app-plus": {
+							"titleNView": {
+								"titleSize": "36rpx",
+								"buttons": [
+									{
+									    "float": "right",
+										"fontSize": "30rpx",
+										"text": "提交"
+									
+									}
+									
+								]
+							}
+					}
+            }
+            
+        }
+        ,{
+            "path" : "pages/password/password",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/userName/userName",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "修改用户名",
+                "enablePullDownRefresh": false,
+				"app-plus": {
+							"titleNView": {
+								"titleSize": "28rpx",
+								"buttons": [
+									{    
+									    "float": "right",
+										"fontSize": "30rpx",
+										"text": "确定"
+									
+									}
+									
+								]
+							}
+					}
+            }
+            
+        }
+        ,{
+            "path" : "pages/password/modifyPassword/modifyPassword",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/password/foundPassword/foundPassword",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	 "tabBar": {
+	    "list": [
+	      {
+	        "pagePath": "pages/home/home",
+	        "text": "主页",
+	        "iconPath": "static/home/home.png",
+	        "selectedIconPath": "static/home/home_active.png"
+	      },
+		  {
+		    "pagePath": "pages/category/category",
+		    "text": "分类",
+		    "iconPath": "static/category/category.png",
+		    "selectedIconPath": "static/category/category _active.png"
+		  },
+	      {
+	        "pagePath": "pages/order/order",
+	        "text": "排行",
+	        "iconPath": "static/order/order.png",
+	        "selectedIconPath": "static/order/order_active.png"
+	      },
+		  {
+		    "pagePath": "pages/user/user",
+		    "text": "我的",
+		    "iconPath": "static/user/user.png",
+		    "selectedIconPath": "static/user/user_active.png"
+		  }
+	    ]
+	  },
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uniapp",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}

@@ -1,0 +1,1 @@
+<view id="resource_link"><block wx:for="{{movieUrl}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view data-event-opts="{{[['tap',[['entryPlay',['$0'],[[['movieUrl','',index]]]]]]]}}" class="num" bindtap="__e"><navigator class="_a">{{item.num}}</navigator></view></block></view>

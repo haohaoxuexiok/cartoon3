@@ -1,0 +1,1 @@
+<view id="home"><movie-item vue-id="1da55560-1" movieList="{{movieList}}" data-event-opts="{{[['^handleClick',[['handleClick']]]]}}" bind:handleClick="__e" bind:__l="__l"></movie-item></view>

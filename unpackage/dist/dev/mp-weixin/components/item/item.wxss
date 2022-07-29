@@ -1,0 +1,37 @@
+
+#item{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.movieItem{
+	width: 30%;
+	margin: 20rpx 0;
+}
+.movieItem .banner{
+	position: relative;
+}
+.movieItem .banner image{
+	height:300rpx;
+	width: 100%;
+}
+.movieItem .banner .state{
+	box-sizing: border-box;
+	position: absolute;
+	bottom: 10rpx;
+	right: 0;
+	left: 0;
+	padding: 0 10rpx;
+	width: 100%;
+	background-color: rgb(0,0,0,0.1);
+	font-size: 24rpx;
+	color: #fff;
+	text-align: right;
+}
+.movieItem .title{
+	font-size: 28rpx;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
